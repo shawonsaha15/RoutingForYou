@@ -1,0 +1,27 @@
+username
+password
+
+DOB
+age
+gender
+home address
+work address
+phone
+email
+===============
+bus details
+
+name
+route
+timestamps
+fare
+*driver contact details
+
+================
+review
+
+description
+timestamps
+fare
+rating (number)
+================
