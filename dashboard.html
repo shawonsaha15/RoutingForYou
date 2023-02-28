@@ -9,38 +9,50 @@
 			<nav>
 				<h1>RFY</h1>
 				<ul>
-					<li><a href="#">HOME</a></li>
+					<li><a href="dashboard.html">HOME</a></li>
+				</ul>
+				<ul>
 					<li><a href="#">MAP</a></li>
+				</ul>
+				<ul>
 					<li><a href="#">BUSES</a></li>
 				</ul>
-				<img src="images/64572.png" class="user-icon">
 				
-				<div class="sub-menu-wrap">
+				<img src="images/64572.png" class="user-icon" onclick="toggleMenu()">
+				
+				<div class="sub-menu-wrap" id="subMenu">
 					<div class="sub-menu">
 						<div class="user-info">
 							<img src="images/64572.png">
 							<h2>name</h2>
-							<hr>
-							
-							<a href="#" class="sub-menu-link">
-								<img src="images/profile.png">
-								<p>Profile</p>
-								<span></span>
-							</a>
-							<a href="#" class="sub-menu-link">
-								<img src="images/setting.png">
-								<p>Settings</p>
-								<span></span>
-							</a>
-							<a href="#" class="sub-menu-link">
-								<img src="images/logout.png">
-								<p>Logout</p>
-								<span></span>
-							</a>
 						</div>
+						<hr>
+						<a href="dashboard.html" class="sub-menu-link">
+							<img src="images/profile.png">
+							<p>Profile</p>
+							<span>></span>
+						</a>
+						<a href="#" class="sub-menu-link">
+							<img src="images/setting.png">
+							<p>Settings</p>
+							<span>></span>
+						</a>
+						<a href="logout.php" class="sub-menu-link">
+							<img src="images/logout.png">
+							<p>Logout</p>
+							<span>></span>
+						</a>
 					</div>
 				</div>
 			</nav>
 		</div>
+		
+		<script>
+			let subMenu = document.getElementById("subMenu");
+			
+			function toggleMenu(){
+				subMenu.classList.toggle("open-menu");
+			}
+		</script>
 	</body>
 </html>

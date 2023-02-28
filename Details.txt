@@ -25,3 +25,8 @@ timestamps
 fare
 rating (number)
 ================
+
+
+Refs:
+https://www.youtube.com/watch?v=ybXulmeilFM
+https://www.youtube.com/watch?v=ynA4BzJmzH8

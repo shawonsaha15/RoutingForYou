@@ -27,7 +27,7 @@
             $query = $conn->query($sql);
             
             if($query->num_rows > 0){
-                header('location:dashboard.php');
+                header('location:dashboard.html');
             }else{
                 echo'Not found';
             }
