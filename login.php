@@ -37,9 +37,44 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     </head>
     <body>
+		<!--Navbar-->
+		<section class="header">
+			<div class="navbar">
+			<nav>
+				<h1>RFY</h1>
+				<ul>
+					<li><a href="dashboard.html">HOME</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">MAP</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">BUSES</a></li>
+				</ul>
+				
+				<img src="images/64572.png" class="user-icon" onclick="toggleMenu()">
+				
+				<div class="sub-menu-wrap" id="subMenu">
+					<div class="sub-menu">
+						<div class="user-info">
+							<a href="login.php"><h6>LOGIN</h6></a>
+						</div>
+						<hr>
+						<div class="user-info">
+							<a href="registration.php"><h6>REGISTER</h6></a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		</section>
+		
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -67,11 +102,20 @@
                             <button class="btn btn-success" name="submit">Login</button>
                         </div>
                     </form>
+					<hr>
                     <h5>Don't have an account? <a href="registration.php">Register here!</a></h5>
                 </div>
                 <div class="col-4">
                 </div>
             </div>
         </div>
+		
+		<script>
+			let subMenu = document.getElementById("subMenu");
+			
+			function toggleMenu(){
+				subMenu.classList.toggle("open-menu");
+			}
+		</script>
     </body>
 </html>
