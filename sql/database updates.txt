@@ -1,0 +1,5 @@
+ride review 
+it will have driver id as a primary key that
+would be used as a foreign key in 'bus_info' table. 
+It will connect the driver_contact column with the 
+corresponding driver's id
